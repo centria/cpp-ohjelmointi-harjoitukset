@@ -42,7 +42,7 @@ int main()
     int a = 10;
     int b = 190;
     int c = 4;
-    bool tulos = a + b *c; //Tästä pitäisi saada tulos 800
+    tulos = a + b *c; //Tästä pitäisi saada tulos 800
     testaaTehtava3(tulos)
 
 
@@ -66,26 +66,26 @@ void testaaTehtava3(int tulos)
 {
     if(tulos == 800)
     {
-          cout << "T3. - OK";
+          cout << "T3. - OK" << endl;
     }
     else
-        cout << "T3. - FAILED";
+        cout << "T3. - FAILED" << endl;
 }
 
 double testaaTehtava2(double kanta, double korkeus)
 {
     double ala = (kanta*korkeus)/2.0;
-    cout << "T2. - OK";
+    cout << "T2. - OK" << endl;
 }
 
 void testaaTehtava1(double r, double pii)
 {
     if(areFloatsEquals(2*r*pii,2*5.0*pii))
     {
-          cout << "T1. - OK";
+          cout << "T1. - OK" << endl;
     }
     else
-        cout << "T1. - FAILED";
+        cout << "T1. - FAILED" << endl;
 }
 
 
