@@ -104,13 +104,13 @@ int main()
    /*
     * Toteuta ohjelma joka tulostaa annetun kuukauden päivien määrän. Ohjelma ei huomioi karkausvuotta
     */
-   int luku;
+   int kuukausi;
 
    cout << "Anna kuukauden numero (1-12):";
-   cin >> luku;
+   cin >> kuukausi;
    cout << endl;
 
-   switch (luku)
+   switch (kuukausi)
    {
         case 1:
         case 3:
@@ -131,4 +131,3 @@ int main()
 
     return 0;
 }
-
