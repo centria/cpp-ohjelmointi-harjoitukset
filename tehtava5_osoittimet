@@ -1,0 +1,68 @@
+/**
+ * @file main.cpp
+ * @brief Tehtävä 1.
+ * @author Jari Isohanni
+ * Contact: jari.isohanni@centria.fi
+ */
+
+#include <iostream>
+#include <cmath>
+#include <limits>
+
+using namespace std;
+
+/*
+Toteuta funktio joka vaihtaa kahden int-tyyppisen luvun arvot, käytä viittauksia
+
+Toteuta funktio joka vaihtaa kahden int-tyyppisen luvun arvot, käytä osoittimia
+
+Toteuta funktiot joka tulostaa float-tyyppisen taulukon kaikki arvot, hyödynnä osoitinaritmetiikkaa
+*/
+
+    void vaihdaViittauksilla(int &luku1, int &luku2);
+    void vaihdaOsoittimilla(int *luku1, int *luku2);
+    void tulostaTaulu(float *tauluPtr, int pituus);
+
+    int main()
+    {
+        int luku1 = 10, luku2 = 20;
+
+        vaihdaViittauksilla(luku1,luku2);
+        cout << "luku1: " << luku1 << " luku2:" << luku2 << endl;
+
+        vaihdaOsoittimilla(&luku1,&luku2);
+        cout << "luku1: " << luku1 << " luku2:" << luku2 << endl;
+
+
+        float taulu[] = {1.2, 3.4, 5.4, 6.7, 7.6};
+        int pituus = 5;
+
+        cout << "Taulu:";
+        tulostaTaulu(taulu,pituus);
+        cout << endl;
+    }
+
+    void vaihdaViittauksilla(int &luku1, int &luku2)
+    {
+        int tmp = luku1;
+        luku1 = luku2;
+        luku2 = tmp;
+    }
+
+    void vaihdaOsoittimilla(int *luku1, int *luku2)
+    {
+        int tmp = *luku1;
+        *luku1 = *luku2;
+        *luku2 = tmp;
+    }
+
+    void tulostaTaulu(float *tauluPtr, int pituus)
+    {
+        for(int i = 0; i < pituus; i++)
+            cout << *(tauluPtr++) << ",";
+    }
+
+
+
+
+
