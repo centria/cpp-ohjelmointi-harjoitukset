@@ -1,6 +1,6 @@
 #include "kuormaauto.h"
 
-KuormaAuto::KuormaAuto()
+KuormaAuto::KuormaAuto(): Auto()
 {
 
 }
